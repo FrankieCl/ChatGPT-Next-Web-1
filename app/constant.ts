@@ -150,12 +150,16 @@ const openaiModels = [
   "gpt-4o-2024-05-13",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
+  "claude-3-sonnet-20240229",
+  "claude-3-opus-20240229",
+  "claude-3-haiku-20240307",
+  "claude-3-5-sonnet-20240620",
+  "gemini-1.5-pro-latest",
+  "gemini-1.5-flash-latest",
 ];
 
 const googleModels = [
   "gemini-1.0-pro",
-  "gemini-1.5-pro-latest",
-  "gemini-1.5-flash-latest",
   "gemini-pro-vision",
 ];
 
@@ -163,10 +167,6 @@ const anthropicModels = [
   "claude-instant-1.2",
   "claude-2.0",
   "claude-2.1",
-  "claude-3-sonnet-20240229",
-  "claude-3-opus-20240229",
-  "claude-3-haiku-20240307",
-  "claude-3-5-sonnet-20240620",
 ];
 
 export const DEFAULT_MODELS = [
