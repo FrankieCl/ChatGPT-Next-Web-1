@@ -283,15 +283,6 @@ export const DEFAULT_MODELS = [
       providerType: "openai",
     },
   })),
-  ...openaiModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "azure",
-      providerName: "Azure",
-      providerType: "azure",
-    },
-  })),
   ...googleModels.map((name) => ({
     name,
     available: true,
