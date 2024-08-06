@@ -1,4 +1,4 @@
-export const OWNER = "ChatGPTNextWeb";
+export const OWNER = "Frankie";
 export const REPO = "ChatGPT-Next-Web";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -270,6 +270,7 @@ const openaiModels = [
   "gpt-4-turbo-2024-04-09",
   "gpt-4-1106-preview",
   "dall-e-3",
+  "claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [
@@ -314,6 +315,11 @@ const bytedanceModels = [
 
 const alibabaModes = [
   "qwen-turbo",
+  "qwen1.5-72b-chat",
+  "qwen1.5-110b-chat",
+  "qwen2-72b-instruct",
+  "llama3.1-70b-instruct",
+  "llama3.1-405b-instruct",
   "qwen-plus",
   "qwen-max",
   "qwen-max-0428",
