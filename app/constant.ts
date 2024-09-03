@@ -1,4 +1,6 @@
-export const OWNER = "Frankie";
+import path from "path";
+
+export const OWNER = "ChatGPTNextWeb";
 export const REPO = "ChatGPT-Next-Web";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -41,6 +43,7 @@ export enum Path {
   Sd = "/sd",
   SdNew = "/sd-new",
   Artifacts = "/artifacts",
+  SearchChat = "/search-chat",
 }
 
 export enum ApiPath {
@@ -263,6 +266,7 @@ const openaiModels = [
   "gpt-4-32k-0613",
   "gpt-4-turbo",
   "gpt-4-turbo-preview",
+  "chatgpt-4o-latest",
   "gpt-4o",
   "gpt-4o-2024-05-13",
   "gpt-4o-2024-08-06",
@@ -270,9 +274,9 @@ const openaiModels = [
   "gpt-4o-mini-2024-07-18",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
-  "gpt-4-1106-preview",
   "dall-e-3",
   "claude-3-5-sonnet-20240620",
+  "gpt-4-1106-preview",
 ];
 
 const googleModels = [
@@ -320,6 +324,7 @@ const alibabaModes = [
   "qwen1.5-72b-chat",
   "qwen1.5-110b-chat",
   "qwen2-72b-instruct",
+  "qwen2-math-72b-instruct",
   "llama3.1-70b-instruct",
   "llama3.1-405b-instruct",
   "qwen-plus",
@@ -481,4 +486,7 @@ export const internalAllowedWebDavEndpoints = [
 ];
 
 export const DEFAULT_GA_ID = "G-89WN60ZK2E";
-export const PLUGINS = [{ name: "Stable Diffusion", path: Path.Sd }];
+export const PLUGINS = [
+  { name: "Stable Diffusion", path: Path.Sd },
+  { name: "Search Chat", path: Path.SearchChat },
+];
